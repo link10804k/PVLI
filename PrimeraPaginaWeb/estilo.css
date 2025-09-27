@@ -1,0 +1,15 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.clase {
+  color: red;
+}
+
+p {
+  text-align: end;
+  text-decoration-line: overline;
+  text-decoration-style: wavy;
+  text-decoration-color: blue;
+}
