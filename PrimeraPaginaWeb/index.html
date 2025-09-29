@@ -11,29 +11,15 @@
 
 <body>
   <h1>Esto es un título de primer nivel.</h1>
-  <ul style="font-size: large;"> Lista de mejores peleas del animé
-    <div>
-      <li class="no">adiós</li>
-      <video width="50* autoplay muted src="assets/fade-away-oooooooooooo.mp4 type="video/mp4"></video>
-    </div>
-    <div>
-      <li class="no">adiós</li>
-      <video width="50* autoplay muted src="assets/fade-away-oooooooooooo.mp4 type="video/mp4"></video>
-    </div>
-    <div>
-      <li class="no">adiós</li>
-      <video width="50* autoplay muted src="assets/fade-away-oooooooooooo.mp4 type="video/mp4"></video>
-    </div>
-    <div>
-      <li class="no">adiós</li>
-      <video width="50* autoplay muted src="assets/fade-away-oooooooooooo.mp4 type="video/mp4"></video>
-    </div>
-    <div>
-      <li class="no">adiós</li>
-      <video width="50* autoplay muted src="assets/fade-away-oooooooooooo.mp4 type="video/mp4"></video>
-    </div>
+  <ul id="lista" style="font-size: large;"> Lista de mejores peleas del animé
+    <li class="like">EC</li>
+    <li class="like">EDA</li>
+    <li class="like">MOD</li>      
+    <li class="dislike">PVLI</li>    
+    <li class="like">TPV</li>     
   </ul>
-  <button onclick="reemplazarPorVideo('no')">Desaparece</button>
-  <video id="emoji" width="50" autoplay muted onpause = "" src="assets/fade-away-oooooooooooo.mp4" type="video/mp4"></video>
+  <button onclick='AlternarVisibilidad("like")'>Alternar visibilidad asignaturas buenas</button>
+  <button onclick='AlternarVisibilidad("dislike")'>Alternar visibilidad asginaturas malas</button>
+  <button onclick=>Alternar color según gustos</button>
 </body>
 </html>
