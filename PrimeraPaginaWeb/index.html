@@ -11,28 +11,14 @@
 
 <body>
   <h1>Esto es un título de primer nivel.</h1>
-  <ul> Lista de mejores peleas del animé
+  <ul style="font-size: large;"> Lista de mejores peleas del animé
+    <li class="no">adiós</li>
     <li class="si">hola</li>
+    <li class="no">adiós</li>
+    <li class="no">adiós</li>
     <li class="no">adiós</li>
   </ul>
   <button onclick="reemplazarPorVideo('no')">Desaparece</button>
-  <video class="emoji" width="50" autoplay muted onpause ="desaparece('emoji')">
-    <source src="assets/fade-away-oooooooooooo.mp4" type="video/mp4">   
-  </video>
-  <div>
-    <h2 class=clase>Este es de 2º y hay más</h2>
-
-    <p class=clase id="magico"> Esto es un párrafo. Y abajo aparece una imagen con un link a la UCM</p>
-    <a href="https://www.ucm.es/" target="_blank">
-      <img src="https://www.ucm.es/themes/ucm16/media/img/logo.png" alt="Si la imagen no se carga, se ve esto" width = "" height = "200"><!--Modifica el atributo src y verás como se muestra el mensaje, pero el link (etiqueta <a>) seguirá funcionando al ser un hijo -->
-    </a>
-  </div>
-  <div>
-    <button onclick="alert(devuelveTextoDeAlerta())">Soy un botón de Alerta</button>
-  </div>
-  <div>
-    <button onclick="document.getElementById('magico').style.visibility='hidden'"> Desaparece!!! </button>
-    <button onclick="desaparece('magico')"> Desaparece!!! (pero usando una función) </button>
-  </div>
+  <video id="emoji" width="50" autoplay muted onpause = "" src="assets/fade-away-oooooooooooo.mp4" type="video/mp4"></video>
 </body>
 </html>
