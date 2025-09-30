@@ -13,3 +13,8 @@ p {
   text-decoration-style: wavy;
   text-decoration-color: blue;
 }
+
+ul {
+  line-height: 300%;
+}
+
