@@ -1,0 +1,6 @@
+¿Cuál es la diferencia entre .apply() y .call()?
+
+Apply() y call() hacen lo mismo, lo único que cambia es la manera en la que se pasan los argumentos.
+Con call, el primer argumento es el que será tratado como "this" mientras que el resto son los que necesitaría la función
+(si la función fuese Suma(s1, s2), el segundo y tercer argumento de call() serían s1 y s2 en la función).
+Con apply es exactamento igual excepto porque todos los argumentos exceptuando el "this" se pasan en una array.

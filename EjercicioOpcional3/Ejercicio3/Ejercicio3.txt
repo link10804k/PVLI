@@ -1,0 +1,13 @@
+¿Te atreves a decir por qué cuando inspeccionamos el objeto no aparecen sus propiedades? 
+
+Yo en Visual Studio Code sí que veo estas propiedades por alguna razón pero se supone que, 
+cuando se declaran con Object.defineProperty(), estas propiedades por defecto son no enumerables 
+(no aparece al enumerar las propiedades del objeto).
+
+¿Cómo podrías arreglarlo? 
+
+Especificando la propiedad "enumerable = true" al definir la variable.
+
+¿Cómo harías para que sólo se vieran las propiedades que son parte de la API?
+
+Por ejemplo dejando las variables que pertenecen a la API con "enumerable = true" y las que no con "enumerable = false".
