@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'hadley';
+	src: url('../assets/HADLEYv3__.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'arcade';
+	src: url('../assets/arcade.ttf') format('truetype');
+}
+
+h1 {
+  text-align: center;
+}

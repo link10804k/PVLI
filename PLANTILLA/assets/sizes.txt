@@ -1,0 +1,85 @@
+Imágenes:
+ 	arrow.png
+ 	icon.png
+ 	meat.png
+ 	pig.png
+ 	background.png
+
+Spritesheets:
+ 	dead.png - frames de 24x24
+ 	pooyan.png - frames de 24x32
+ 	wolf.png - frames de 18x28
+
+Animaciones:
+	
+	//Jugador
+	this.anims.create({
+		key: 'idle_arrow',
+		frames: this.anims.generateFrameNumbers('player', {start:0, end:0}),
+		frameRate: 5,
+		repeat: 0
+	});
+	this.anims.create({
+		key: 'idle_meat',
+		frames: this.anims.generateFrameNumbers('player', {start:2, end:2}),
+		frameRate: 20,
+		repeat: -1
+	});
+	this.anims.create({
+		key: 'shoot',
+		frames: this.anims.generateFrameNumbers('player', {start:1, end:1}),
+		frameRate: 15,
+		repeat: 0
+	});
+	this.anims.create({
+		key: 'empty',
+		frames: this.anims.generateFrameNumbers('player', {start:3, end:3}),
+		frameRate: 5,
+		repeat: 0
+	});
+
+	this.anims.create({
+		key: 'player_die',
+		frames: this.anims.generateFrameNumbers('player_dead', {start:0, end:1}),
+		frameRate: 5,
+		repeat: 0
+	});
+
+	//Lobos
+	this.anims.create({
+		key: 'wolf_run',
+		frames: this.anims.generateFrameNumbers('wolf', {start:7, end:10}),
+		frameRate: 5,
+		repeat: -1
+	});
+	this.anims.create({
+		key: 'wolf_die',
+		frames: this.anims.generateFrameNumbers('wolf', {start:11, end:11}),
+		frameRate: 5,
+		repeat: 0
+	});
+	this.anims.create({
+		key: 'wolf_fall',
+		frames: this.anims.generateFrameNumbers('wolf', {start:12, end:12}),
+		frameRate: 3,
+		repeat: 0
+	});
+	this.anims.create({
+		key: 'wolf_down',
+		frames: this.anims.generateFrameNumbers('wolf', {start:13, end:13}),
+		frameRate: 10,
+		repeat: 0
+	});
+
+	this.anims.create({
+		key: 'wolf_blow',
+		frames: this.anims.generateFrameNumbers('wolf', {start:0, end:4}),
+		frameRate: 5,
+		repeat: 0
+	});
+	this.anims.create({
+		key: 'wolf_idle',
+		frames: this.anims.generateFrameNumbers('wolf', {start:3, end:4}),
+		frameRate: 3,
+		repeat: -1
+	});

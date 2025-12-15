@@ -1,5 +1,5 @@
 export default class Cat extends Phaser.GameObjects.Sprite {
-    constructor(scene, x=0, y=0, texture="cat", frame=0, speed, ui) {
+    constructor(scene, x=0, y=0, texture="cat", frame=0, speed) {
         super(scene, x, y, texture, frame);
         this.scene.add.existing(this);
 
@@ -14,16 +14,11 @@ export default class Cat extends Phaser.GameObjects.Sprite {
 
         this.on("pointerdown", (pointer)=> {
             this.vidas--; // Se le restan vidas al gato al clicar encima suya
-            //console.log(pointer.x, " ", pointer.y);
             this.scene.events.emit("loseLife");
-            //ui.setText("Vidas gato " + ui.index + ": " + this.vidas) // Al parecer esto es más feo que actualizarlo en el update
         })
 
         this.sKey = this.scene.input.keyboard.addKey('S');
-        this.sKey.on("down", ()=> {
-            this.play("caminar", true); // True para no empezar la animación desde 0 si ya se estaba ejecutando
-            this.y += this.speed / 50;
-        })
+
         this.sKey.on("up", ()=> {
             this.play("darVueltas", true);
         })
@@ -31,6 +26,10 @@ export default class Cat extends Phaser.GameObjects.Sprite {
 
     preUpdate(t, dt) {
         super.preUpdate(t, dt); // IMPORTANTE
-        //console.log("miau", this.vidas);
+        
+        if (this.sKey.isDown) {
+            this.y += this.speed * dt / 1000;
+            this.play("caminar", true);
+        }
     }
 }
