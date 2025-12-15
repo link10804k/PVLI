@@ -1,0 +1,8 @@
+h1 {
+	color: blue;
+	text-align: center;
+}
+@font-face {
+	font-family: 'Comicate';
+	src: url('../assets/Comicate.ttf') format('truetype');
+}
